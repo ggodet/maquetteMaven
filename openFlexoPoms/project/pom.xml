@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.openflexo</groupId>
+	<artifactId>project</artifactId>
+	<packaging>pom</packaging>
+    <version>1.0</version>
+	<name>OpenFlexo Project Infrastructure</name>
+	<organization>
+		<name>${organization.name}</name>
+		<url>${organization.url}</url>
+	</organization>
+	<properties>
+		<product.name>OpenFlexo</product.name>
+		<organization.name>AgileBirds</organization.name>
+		<organization.url>http://www.agilebirds.com/</organization.url>
+		<organization.logo>http://www.agilebirds.com/_Ressources/img/header_Logo.gif</organization.logo>
+	</properties>
+	<scm>
+		<connection>scm:git:ssh://git@github.com:agilebirds/openflexo.git</connection>
+		<url>https://github.com/agilebirds/openflexo</url>
+	</scm>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>https://jenkins.openflexo.org/</url>
+	</ciManagement>
+	<url>http://www.openflexo.org</url>
+	<description> this pom identifies developpent infrastucture of the project
+    </description>
+	<repositories>
+		<repository>
+			<id>openflexo</id>
+			<url>https://maven.openflexo.org/artifactory/openflexo-deps/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>openflexo-release</id>
+			<name>Open Flexo Releases</name>
+			<url>https://maven.openflexo.org/artifactory/openflexo-release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>openflexo-snapshot</id>
+			<name>Open Flexo Snapshots</name>
+			<url>https://maven.openflexo.org/artifactory/openflexo-snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
+

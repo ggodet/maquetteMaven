@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+    		<groupId>org.openflexo</groupId>
+    		<artifactId>projetDependencyManagement</artifactId>
+    		<version>1.0</version>
+    		<relativePath>../projetDependencyManagement</relativePath>
+  	</parent>
+	<groupId>org.openflexo.technologyadapter</groupId>
+	<artifactId>api</artifactId>
+	<packaging>pom</packaging>
+        <version>1.0</version>
+	<name>OpenFlexo technology Adapter capitalisation</name>
+	<properties>
+		<technologyAdaptorApiVersion>1.6</technologyAdaptorApiVersion>
+	</properties>
+	<description> this pom identifies what is required to develop technologyAdapters</description>
+</project>
+
